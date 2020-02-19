@@ -2,10 +2,12 @@ $('.navTrigger').click(function () {
     $(this).toggleClass('active');
     console.log("Clicked menu");
     $("#mainListDiv").toggleClass("show_list");
-    $("#mainListDiv").fadeIn("main_list");
+    $("#mainListDiv").fadeIn(300, "main_list");
 
 });
 
+
+// Typing
 const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
 

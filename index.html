@@ -20,8 +20,8 @@
 	<title>Cedric Suanco | Portfolio</title>
 </head>
 <body>
-	<div></div>
-	<nav class="nav">
+	
+		<nav class="nav">
 	            <div class="logo">
 	                <a href="#">Cedric Suanco</a>
 	            </div>
@@ -30,7 +30,7 @@
 	            	<div class="ul-container mr-auto">
 	                <ul class="navlinks text-center ml-auto">
 	                    <li class="text-center mx-auto"><a href="#">About</a></li>
-	                    <li class="text-center mx-auto"><a href="#">Portfolio</a></li>
+	                    <li class="text-center mx-auto"><a href="#">Projects</a></li>
 	                    <li class="text-center mx-auto"><a href="#">Contact</a></li>
 	                </ul>
 	                </div>
@@ -43,24 +43,109 @@
 	        </div>
 	    </nav>
 
-	    <section class="home text-white shadow-lg">
+	    <section class="home text-white">
 	    	<div class="container try">
 	    		<h1>Cedric is <h2 class="typed-text"></h2><h2 class="cursor">&nbsp;</h2></h1>
 	    	</div>
 	    	
 	    </section>
 
-	    <div style="height: 1000px">
+	    <div style="">
 	        <!-- just to make scrolling effect possible -->
-				<div class="container">
+				<div class="container my-5 section-1">
 					<div class="row">
-						<div class="col-12">
-							asdaksdjk
+						<div class="col-12 col-md-6">
+							<div class="img-profile align-middle">
+								<img src="./assets/images/img-profile.jpg" alt="" class="img-profile img-fluid">
+							</div>
+						</div>
+
+						<div class="col-12 col-md-6">
+							<h1>Cedric Suanco</h1>
+							<p class="text-center">Ako nga pala si Cedric Suanco, ang iyong lingkod.</p>
 						</div>
 					</div>
 				</div>
-			
 	    </div>
+
+		<div class="section-2 bg-secondary">
+			<div class="container pt-5">
+				<h1 class="text-center">Skills</h1>
+				<div class="border-project">
+				</div>        	
+		    </div>
+
+
+		    <div class="container py-5">
+		    	<div class="row">
+		    		<div class="col-12 col-md-2 col-sm-12 text-center">
+		    			<img src="./assets/images/html5-brands.svg" alt="" class="skills-logo">
+		    		</div> 
+		    		<div class="col-12 col-md-2 col-sm-12 text-center">
+		    			<img src="./assets/images/css3-alt-brands.svg" alt="" class="skills-logo">
+		    		</div>
+		    		<div class="col-12 col-md-2 col-sm-12 text-center">
+		    			<img src="./assets/images/bootstrap-brands.svg" alt="" class="skills-logo">
+		    		</div>
+		    		<div class="col-12 col-md-2 col-sm-12 text-center">
+		    			<img src="./assets/images/sass-brands.svg" alt="" class="skills-logo">
+		    		</div>
+		    		<div class="col-12 col-md-2 col-sm-12 text-center">
+		    			<img src="./assets/images/laravel-brands.svg" alt="" class="skills-logo">
+		    		</div>
+		    		<div class="col-12 col-md-2 col-sm-12 text-center">
+		    			<img src="./assets/images/php-brands.svg" alt="" class="skills-logo"> 
+		    		</div>
+		    		<div class="col-12 col-md-2 col-sm-12 text-center">
+		    			<img src="./assets/images/node-brands.svg" alt="" class="skills-logo">
+		    		</div>
+		    	</div>
+		    </div>
+		</div>
+
+		<div class="section-3 bg-white">
+		    <div class="container pt-5">
+				<h1 class="text-center">Projects</h1>
+				<div class="border-project">
+				</div>        	
+		    </div>
+
+		     <div class="container ">
+		    	<div class="row pb-5">
+		    		<div class="col-12 col-md-4">
+		    			<h4 class="py-5">Capstone 1</h4>
+		    			<label for="">Le Debonnaire Barberhsop</label>
+		    			<p>Responsive Static Web Page</p>
+		    			<a href="https://csuanco.gitlab.io/capstone1/" target="_blank"><img src="./assets/images/capstone1.png" alt="" class="img-fluid"></a>
+		    		</div>
+
+		    		<div class="col-12 col-md-4">
+		    			<h4 class="py-5">Capstone 2</h4>
+		    			<label for="">Locked & Loaded</label>
+		    			<p>Internal Rental Web Page</p>
+		    			<a href="http://airsoft-internal.herokuapp.com/items" target="_blank"><img src="./assets/images/capstone2.png" alt="" class="img-fluid"></a>
+		    		</div>
+
+		    		<div class="col-12 col-md-4">
+		    			<h4 class="py-5">Capstone 3</h4>
+		    			<label for="">Janueve</label>
+		    			<p>Booking Web Page</p>
+		    			<a href="https://janine-makeover-ui.herokuapp.com/login" target="_blank"><img src="./assets/images/capstone3.png" alt="" class="img-fluid"></a>
+		    		</div>
+		    	</div>
+	   		 </div>
+	    </div>
+
+		<footer class="bg-dark">
+			<h4 class="py-5 mb-0 text-white text-center">All Rights Reserved &copy; | <a href=""><img src="./assets/images/facebook-brands.svg" class="social-media-logo" alt=""></a></h4>
+		</footer>
+
+
+
+
+
+
+
 
 	<!-- Jquery needed -->
 	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -70,7 +155,7 @@
 	<!-- Function used to shrink nav bar removing paddings and adding black background -->
 	    <script>
 	        $(window).scroll(function() {
-	            if ($(document).scrollTop() > 100) {
+	            if ($(document).scrollTop() >= 810) {
 	                $('.nav').addClass('affix');
 	                console.log("OK");
 	            } else {
@@ -84,7 +169,7 @@
 
 
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-	    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 </body>
 </html>
